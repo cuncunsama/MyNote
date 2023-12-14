@@ -1,8 +1,17 @@
 # CVPR2023
 ## DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation
 *<https://ieeexplore.ieee.org/document/10204880/authors#authors>*  
-*<https://dreambooth.github.io>*  
-**Effect**: The effect is akin to a “magic photo booth”—once a few images of the subject are taken, the booth generates photos of the subject in different conditions and scenes, as guided by simple and intuitive text prompts.
+*<https://dreambooth.github.io>* 
+
+**Problem** 
+Large text-to-text models cannot mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.  
+
+*language drift*  
+
+**Method** 
+
+
+**Effect** The effect is akin to a “magic photo booth”—once a few images of the subject are taken, the booth generates photos of the subject in different conditions and scenes, as guided by simple and intuitive text prompts.
 
 
 
