@@ -67,7 +67,7 @@ sudo chgrp -R suda401 /home/suda401/1
 组名：口令：组标识号：组内用户列表
 
 ### du
-du -h --max-depth=0
+du -h --max-depth=0  
 du -h --max-depth=1 文件名
 
 
