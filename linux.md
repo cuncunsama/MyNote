@@ -72,7 +72,11 @@ du -h --max-depth=1 文件名
 
 ### git使用
 
-
+### linux给edge设置代理
+修改/usr/share/applications/microsoft-edge-dev.desktop  
+```
+Exec=/usr/bin/microsoft-edge-dev --proxy-server="127.0.0.1:7890"
+```
 
 
 
