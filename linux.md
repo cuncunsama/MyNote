@@ -12,6 +12,12 @@ sudo grep -nir "xxx" ./*
 ```
 sudo mount -t cifs //192.168.1.100/Share ~/share -o username="StrongYouYou",password="'"
 ```
+### ubuntu访问windows的共享文件夹
+```
+smb://192.168.1.100
+User: StrongYouYou
+Passwd: '
+```
 ### docker使用
 ```
 docker images
