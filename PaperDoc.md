@@ -14,8 +14,30 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 **Effect** The effect is akin to a “magic photo booth”—once a few images of the subject are taken, the booth generates photos of the subject in different conditions and scenes, as guided by simple and intuitive text prompts.
 
 ## Learning Transferable Visual Models From Natural Language Supervision(CLIP)
-*<https://openai.com/research/clip>*
-*<https://arxiv.org/abs/2103.00020>*
-*<https://github.com/openai/CLIP>*
+*<https://openai.com/research/clip>*  
+*<https://arxiv.org/abs/2103.00020>*  
+*<https://github.com/openai/CLIP>*  
+
+**CLIP(Contrastive Language-Image Pre-training)**  
+CLIP (Contrastive Language–Image Pre-training) builds on a large body of work on zero-shot transfer, natural language supervision, and multimodal learning.
+CLIP **was designed to** mitigate a number of major **problems** in the standard deep learning approach to computer vision:
+**1. Costly datasets**
+
+**2. Narrow**
+**3. Poor real-world performance**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
