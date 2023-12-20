@@ -1,5 +1,4 @@
-# CVPR2023
-## DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation
+## DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation (CVPR2023)
 *<https://ieeexplore.ieee.org/document/10204880/authors#authors>*  
 *<https://dreambooth.github.io>* 
 
@@ -14,7 +13,9 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 
 **Effect** The effect is akin to a “magic photo booth”—once a few images of the subject are taken, the booth generates photos of the subject in different conditions and scenes, as guided by simple and intuitive text prompts.
 
-
-
+## Learning Transferable Visual Models From Natural Language Supervision(CLIP)
+*<https://openai.com/research/clip>*
+*<https://arxiv.org/abs/2103.00020>*
+*<https://github.com/openai/CLIP>*
 
 
