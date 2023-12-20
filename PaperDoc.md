@@ -25,7 +25,7 @@ CLIP **was designed to** mitigate a number of major **problems** in the standard
 
 **2. Narrow**  
 **3. Poor real-world performance**  
-
+There is a gap between "benchmark performance" and "real performance". The author conjecture that this gap occurs because the models "cheat" by only optimizing for performance on the benchmark, much like a student who passed an exam by studying only the questions on past years' exams. In contrast, the clip model can be evaluated on benchmarks without having to train on their data, so it can't "cheat" in this manners.
 
 
 
