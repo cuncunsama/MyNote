@@ -20,11 +20,11 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 
 **CLIP(Contrastive Language-Image Pre-training)**  
 CLIP (Contrastive Language–Image Pre-training) builds on a large body of work on zero-shot transfer, natural language supervision, and multimodal learning.
-CLIP **was designed to** mitigate a number of major **problems** in the standard deep learning approach to computer vision:
-**1. Costly datasets**
+CLIP **was designed to** mitigate a number of major **problems** in the standard deep learning approach to computer vision:  
+**1. Costly datasets**  
 
-**2. Narrow**
-**3. Poor real-world performance**
+**2. Narrow**  
+**3. Poor real-world performance**  
 
 
 
