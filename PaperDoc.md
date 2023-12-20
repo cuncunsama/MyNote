@@ -13,7 +13,7 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 
 **Effect** The effect is akin to a “magic photo booth”—once a few images of the subject are taken, the booth generates photos of the subject in different conditions and scenes, as guided by simple and intuitive text prompts.
 
-## Learning Transferable Visual Models From Natural Language Supervision(CLIP) 2021
+## (CLIP) Learning Transferable Visual Models From Natural Language Supervision 2021
 *<https://openai.com/research/clip>*  
 *<https://arxiv.org/abs/2103.00020>*  
 *<https://github.com/openai/CLIP>*  
