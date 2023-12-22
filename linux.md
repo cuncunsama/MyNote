@@ -33,6 +33,8 @@ conda activate env
 conda deactivate
 conda config --show-sources
 
+#删除环境
+conda remove -n envname --all 
 ```
 /home/suda401/.condarc
 ### xdg-open filepath
