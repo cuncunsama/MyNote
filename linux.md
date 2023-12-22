@@ -1,3 +1,4 @@
+# LinuxCmd
 ### ssh远程图形化界面
 ```
 ssh -X user@IP
@@ -100,7 +101,17 @@ sudo ufw enable
 ```
 sudo ufw disable
 ```
+# Steps
+### generative-models
+```
+cd generative-models/
+python3 -m venv .pt2
+source .pt2/bin/activate
 
+PYTHONPATH=$PWD streamlit run scripts/demo/sampling.py --server.port 7860
+
+```
+- Put weights in /checkpoints/
 
 
 
