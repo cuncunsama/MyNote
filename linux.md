@@ -86,7 +86,19 @@ du -h --max-depth=1 文件名
 ```
 Exec=/usr/bin/microsoft-edge-dev --proxy-server="127.0.0.1:7890"
 ```
-
+### 防火墙ufw使用
+查看防火墙状态  
+```
+sudo ufw status
+```  
+打开防火墙  
+```
+sudo ufw enable
+```  
+关闭防火墙  
+```
+sudo ufw disable
+```
 
 
 
