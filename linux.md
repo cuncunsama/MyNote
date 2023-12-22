@@ -44,6 +44,7 @@ xdg-open ./ 打开当前文件夹
 ### pip
 ```
 pip intall seaborn -i https://pypi.tuna.tsinghua.edu.cn/simple/
+-i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 ```
 ### vim
 - vim 显示行号  
