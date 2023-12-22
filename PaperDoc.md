@@ -39,6 +39,8 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 # Google AI
 ### 2019《 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding 》
 *<https://arxiv.org/abs/1810.04805>*  
+*<https://github.com/google-research/bert>*  
+
 
 
 
