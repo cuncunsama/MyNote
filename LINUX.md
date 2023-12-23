@@ -82,6 +82,8 @@ du -h --max-depth=0
 du -h --max-depth=1 文件名
 
 ### git使用
+git status
+
 
 ### linux给edge设置代理
 修改/usr/share/applications/microsoft-edge-dev.desktop  
