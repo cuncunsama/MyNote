@@ -1,5 +1,5 @@
 # ICML-2021
-### `(CLIP) 《 Learning Transferable Visual Models From Natural Language Supervision 》 2021`
+## `(CLIP) 《 Learning Transferable Visual Models From Natural Language Supervision 》 2021`
 *<https://openai.com/research/clip>*  
 *<https://arxiv.org/abs/2103.00020>*  
 *<https://github.com/openai/CLIP>*  
@@ -18,7 +18,7 @@ An ImageNet model is good at predicting the 1000 ImageNet categories, but that's
 There is a gap between "benchmark performance" and "real performance". The author conjecture that this gap occurs because the models "cheat" by only optimizing for performance on the benchmark, much like a student who passed an exam by studying only the questions on past years' exams. In contrast, the clip model can be evaluated on benchmarks without having to train on their data, so it can't "cheat" in this manners.  
 
 # CVPR-2023
-### 《 DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation 》(CVPR2023)
+## 《 DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation 》(CVPR2023)
 *<https://ieeexplore.ieee.org/document/10204880/authors#authors>*  
 *<https://dreambooth.github.io>* 
 
@@ -33,13 +33,13 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 
 **Effect** The effect is akin to a “magic photo booth”—once a few images of the subject are taken, the booth generates photos of the subject in different conditions and scenes, as guided by simple and intuitive text prompts.
 
-### Run, Don't Walk: Chasing Higher FLOPS for Faster Neural Networks
+## 《 Run, Don't Walk: Chasing Higher FLOPS for Faster Neural Networks 》
 Paper: *<https://ieeexplore.ieee.org/document/10203371>*  
 Code: *<https://github.com/JierunChen/FasterNet>*
 
-### Paper template
-Paper: *<>*  
-Code: *<>*
+## Paper template
+Paper: *<url>*  
+Code: *<url>*
 
 
 
@@ -48,7 +48,7 @@ Code: *<>*
 # Stability-AI
 
 # Google AI
-### 2019《 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding 》
+## 2019《 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding 》
 *<https://arxiv.org/abs/1810.04805>*  
 *<https://github.com/google-research/bert>*  
 
