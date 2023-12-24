@@ -120,6 +120,12 @@ cd ~/Codebase/stable-diffusion-webui
 ./webui.sh
 ```
 
+### FasterNet
+```
+cd ~/Codebase/FasterNet
+conda activate fasternet
+
+```
 
 
 
