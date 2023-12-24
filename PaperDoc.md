@@ -39,7 +39,7 @@ Code: *<https://github.com/JierunChen/FasterNet>*
 
 ## 《ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders》
 Paper: *<https://ieeexplore.ieee.org/document/10205236>*  
-Code: *<url>*
+Code: *<[url](https://github.com/facebookresearch/ConvNeXt-V2)>*
 
 ## Paper template
 Paper: *<url>*  
