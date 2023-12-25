@@ -113,29 +113,8 @@ for tar in *.tar; do tar-xf $tar --one-top-level; done
 ```
 
 
-# Steps
-### generative-models
-```
-cd generative-models/
-source .pt2/bin/activate
-PYTHONPATH=$PWD streamlit run scripts/demo/sampling.py --server.port 7860
 
-```
-- Put weights in /checkpoints/
 
-### stable-webui
-```
-conda activate sdwebui
-cd ~/Codebase/stable-diffusion-webui
-./webui.sh
-```
-
-### FasterNet
-```
-cd ~/Codebase/FasterNet
-conda activate fasternet
-
-```
 
 
 
