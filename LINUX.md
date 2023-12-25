@@ -103,6 +103,16 @@ sudo ufw enable
 ```
 sudo ufw disable
 ```
+### tar命令解压.tar文件
+```
+#! /bin/bash
+mkdir $1
+tar -xf $1.tar -C $1
+cd $1
+for tar in *.tar; do tar-xf $tar --one-top-level; done
+```
+
+
 # Steps
 ### generative-models
 ```
