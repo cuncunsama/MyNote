@@ -51,9 +51,24 @@ python train_test.py -c cfg/fasternet_t0.yaml \
 Paper: *<https://ieeexplore.ieee.org/document/10205236>*  
 Code: *<https://github.com/facebookresearch/ConvNeXt-V2>*
 
+
+## 《Scaling up GANs for Text-to-Image Synthesis》
+Paper: *<[url](https://ieeexplore.ieee.org/document/10205294/references#references)>*  
+Code: *<url>*
+
+## 《Imagic: Text-Based Real Image Editing with Diffusion Models》
+Paper: *<[url](https://ieeexplore.ieee.org/document/10203581)>*  
+Code: *<url>*
+
 ## Paper template
 Paper: *<url>*  
 Code: *<url>*
+
+
+## Paper template
+Paper: *<url>*  
+Code: *<url>*
+
 
 
 
@@ -82,8 +97,9 @@ PYTHONPATH=$PWD streamlit run scripts/demo/sampling.py --server.port 7860
 
 
 # Arxiv
-### DALL
-
+### 《Discovering the Hidden Vocabulary of DALLE-2》
+*<extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=https%3A%2F%2Farxiv.org%2Fpdf%2F2206.00169.pdf>*  
+DALLE-2 have a hidden vocabulary
 
 
 
