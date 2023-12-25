@@ -36,7 +36,12 @@ Text-to-image diffusion models naturally posses high amounts of output diversity
 ## 《Run, Don't Walk: Chasing Higher FLOPS for Faster Neural Networks》
 Paper: *<https://ieeexplore.ieee.org/document/10203371>*  
 Code: *<https://github.com/JierunChen/FasterNet>*
+### FasterNet
+```
+cd ~/Codebase/FasterNet
+conda activate fasternet
 
+```
 ## 《ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders》
 Paper: *<https://ieeexplore.ieee.org/document/10205236>*  
 Code: *<https://github.com/facebookresearch/ConvNeXt-V2>*
@@ -50,6 +55,20 @@ Code: *<url>*
 
 
 # Stability-AI
+### stable-webui
+```
+conda activate sdwebui
+cd ~/Codebase/stable-diffusion-webui
+./webui.sh
+```
+### generative-models
+```
+cd generative-models/
+source .pt2/bin/activate
+PYTHONPATH=$PWD streamlit run scripts/demo/sampling.py --server.port 7860
+
+```
+- Put weights in /checkpoints/
 
 # Google AI
 ## 2019《 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding 》
