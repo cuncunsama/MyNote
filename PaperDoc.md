@@ -40,7 +40,12 @@ Code: *<https://github.com/JierunChen/FasterNet>*
 ```
 cd ~/Codebase/FasterNet
 conda activate fasternet
-
+```
+**Evaluation**
+```
+python train_test.py -c cfg/fasternet_t0.yaml \
+--checkpoint_path model_ckpt/fasternet_t0-epoch=281-val_acc1=71.9180.pth \
+--data_dir ~/Data/datasets/imagenNet-1k --test_phase -g 1 -e 125
 ```
 ## 《ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders》
 Paper: *<https://ieeexplore.ieee.org/document/10205236>*  
