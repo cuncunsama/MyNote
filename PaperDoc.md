@@ -58,7 +58,10 @@ Code: *<url>*
 
 ## 《Imagic: Text-Based Real Image Editing with Diffusion Models》
 Paper: *<[url](https://ieeexplore.ieee.org/document/10203581)>*  
-Code: *<url>*
+Code: *<url>*  
+Method: Imagic  
+Input: A single input image and a target text(the desired edit)  
+Eg: Making a standing dog sit down, cause a bird to spreads its wings, etc.
 
 ## Paper template
 Paper: *<url>*  
