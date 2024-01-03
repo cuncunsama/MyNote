@@ -129,9 +129,14 @@ PYTHONPATH=$PWD streamlit run scripts/demo/sampling.py --server.port 7860
 # Arxiv
 ### 《Discovering the Hidden Vocabulary of DALLE-2》
 *<extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=https%3A%2F%2Farxiv.org%2Fpdf%2F2206.00169.pdf>*  
-DALLE-2 have a hidden vocabulary
+DALLE-2 have a hidden vocabulary  
 
-
+### DALLE2《Hierarchical Text-Conditional Image Generation with CLIP Latents》
+Paper: *<(https://ar5iv.labs.arxiv.org/html/2204.06125?_immersive_translate_auto_translate=0)>*  
+Code: *<url>*  
+Two-stage model: a prior that generates an image embedding given a text caption, and a decoder that generates an image conditioned on the image embedding.  
+prior: diffusion model yes autoregressive no  
+decoder: diffusion model  
 
 
 
