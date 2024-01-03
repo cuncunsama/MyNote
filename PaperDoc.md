@@ -76,10 +76,13 @@ GAN's strength: GANs are much faster than autoregressive and diffusions models a
 **Weakness**: Potentially unstable training and less diversity in the generation.  
 **Introduce the pretrained CLIP into text-to-image GANS**  
 
+## 《GLIGEN: Open-Set Grounded Text-to-Image Generation》
+Paper: *<[url](https://ieeexplore.ieee.org/document/10203593)>*  Code: *<url>*  
+
+
 ## Paper template
 Paper: *<url>*  
 Code: *<url>*
-
 
 ## Paper template
 Paper: *<url>*  
