@@ -63,6 +63,19 @@ Method: Imagic
 Input: A single input image and a target text(the desired edit)  
 Eg: Making a standing dog sit down, cause a bird to spreads its wings, etc.
 
+## 《GALIP: Generative Adversarial CLIPs for Text-to-Image Synthesis》
+Paper: *<[url](https://ieeexplore.ieee.org/document/10203358)>*  
+Code: *<[url](https://github.com/tobran/GALIP)>*  
+#### DALL-E and LDM
+DALL-E and LDM show impressive ability to synthesize complex scenes and outperform the previous GAMs. They still suffer from three flaws.  
+1. Require tremendous training data and parameters for pretraining.
+2. The generation of large models is much slower than GANs.
+GAN's strength: GANs are much faster than autoregressive and diffusions models and have smooth latent space, which enables more controllable sythesis. The token-by-token generation and progressive denoising require hundreds of inference steps and make the generated results lag the language inputs seriously.  
+3. There is no intuitive smooth latent space as GANs, which maps meaningful visual attributes to the latent vector.
+#### GAN
+**Weakness**: Potentially unstable training and less diversity in the generation.  
+**Introduce the pretrained CLIP into text-to-image GANS**  
+
 ## Paper template
 Paper: *<url>*  
 Code: *<url>*
