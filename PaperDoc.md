@@ -77,7 +77,18 @@ GAN's strength: GANs are much faster than autoregressive and diffusions models a
 **Introduce the pretrained CLIP into text-to-image GANS**  
 
 ## 《GLIGEN: Open-Set Grounded Text-to-Image Generation》
-Paper: *<[url](https://ieeexplore.ieee.org/document/10203593)>*  Code: *<url>*  
+Paper: *<[url](https://ieeexplore.ieee.org/document/10203593)>*  
+Code: *<url>*  
+**GROUNED TEXT2IMAG GENERATION WITH BOUNDING BOXES**
+**Question1**
+The existing large-scale text-to-image generation models **cannot be conditioned on other modalities apart from text**, and cannot thus precisely localize concepts.  
+**combine those inputs**  
+**Question2**  
+*Can we build upon existing pretrained diffusion models and endow them with new conditional input modalities?*  
+**Challenge**
+The Key challenge is preserving the original vast concept knowledge in the pretrained model while learning to inject the new grounding information.
+**Fix**: Freeze the original model weights and add new trainable gated Transformer layers.  
+**Gated mechanism**
 
 
 ## Paper template
