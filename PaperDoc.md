@@ -90,6 +90,15 @@ The Key challenge is preserving the original vast concept knowledge in the pretr
 **Fix**: Freeze the original model weights and add new trainable gated Transformer layers.  
 **Gated mechanism**
 
+## 《Diffusion Probabilistic Model Made Slim》
+Paper: *<https://ieeexplore.ieee.org/document/10204618>*  
+diffusion probabilitic models(DPMs)  
+This paper makes a dedicated attempt to lighten DPM while striving to preserve its favourable performance.  
+**Lighten the model**  
+DALL-E2 is one of DPMs  
+DALL-E2 is composed of 4 separate diffusion models, requirese 5.5B parameters and 356 sampling steps in total.  
+The primary obstacle to training small DPMs is their inability to provide high-frequency realistically, which results from the frequency evolution and bias of diffusion process. In order to resolve these problems, we propose Spectral Diffusion (SD) for efficient image generation. It performs spectrum dynamic denoising by using a wavelet gating operation, which automatically enhances different frequency bands at different reverse steps.  
+
 
 ## Paper template
 Paper: *<url>*  
