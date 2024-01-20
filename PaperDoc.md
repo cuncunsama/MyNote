@@ -1,5 +1,4 @@
-# ICML-2021
-## `(CLIP) 《Learning Transferable Visual Models From Natural Language Supervision》 2021`
+## CLIP - Learning Transferable Visual Models From Natural Language Supervision ICML2021
 *<https://openai.com/research/clip>*  
 *<https://arxiv.org/abs/2103.00020>*  
 *<https://github.com/openai/CLIP>*  
