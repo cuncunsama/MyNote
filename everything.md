@@ -26,10 +26,12 @@ fusion encoder和encoder-decoder结构的区别主要有以下几点：
 - 使用一个共享的编码器或者不同的编码器来实现不同模态之间的知识共享，例如Omnivore ⁴ 和VATT ⁵。
 
 这段文字的主要目的是为了介绍本文提出的OmniVec方法与现有的多模态学习方法的区别和联系，为后续的方法介绍和实验结果做铺垫。
+OmniVec是一种基于变换器的多模态学习方法，它可以在一个统一的架构中学习多种任务和多种模态。OmniVec与现有的多模态学习方法有以下几个主要区别：
 
-Source: Conversation with Bing, 1/23/2024
-(1) Multi-Modal Methods - MTank. https://www.themtank.org/multi-modal-methods.
-(2) Multimodal learning - Wikipedia. https://en.wikipedia.org/wiki/Multimodal_learning.
-(3) What Is Multimodal Learning? - eLearning Industry. https://elearningindustry.com/what-is-multimodal-learning.
-(4) What is Multimodal Communication? (and why use it?). https://www.communicationcommunity.com/what-is-multimodal-communication/.
-(5) Multimodal Qualitative Research to Study Complex Problems. https://www.methodspace.com/blog/multimodal-qualitative-research-study-complex-problems.
+- OmniVec使用了**任务分组**和**模态混合**的训练策略，使得不同的任务和模态之间可以共享知识和信息，提高了网络的泛化能力和鲁棒性。
+- OmniVec在多种模态上进行了**掩码预训练**，利用了自监督的方式来学习更好的表示，而不依赖于标注数据或者模态之间的对应关系。
+- OmniVec使用了**元标记**和**投影层**来适应不同的模态输入，使得不同的模态编码器可以与共享的变换器后端无缝地连接，而不需要额外的特征融合或者对齐机制。
+- OmniVec在多种视觉、听觉、语言和三维模态上进行了广泛的实验，包括图像、视频、深度图、点云、音频、文本等，并在22个公开的基准数据集上取得了最先进的结果或者接近最先进的结果。OmniVec还展示了在跨模态任务、未见数据集和未见任务上的优异表现。
+
+
+
