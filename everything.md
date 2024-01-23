@@ -17,3 +17,19 @@ fusion encoder和encoder-decoder结构的区别主要有以下几点：
 - [Single Encoder and Decoder-Based Transformer Fusion with Multi-Head Attention for Image Segmentation](^4^)：这篇文章介绍了一种基于fusion encoder的图像分割模型，它使用一个单一的编码器和解码器，结合多头注意力机制，从而实现高效的多尺度特征融合。
 - [Feature Fusion Encoder Decoder Network for Automatic Liver Tumor Segmentation](^5^)：这篇文章介绍了一种基于fusion encoder的肝脏肿瘤分割模型，它使用一个基于注意力机制的特征融合方法，从而将高层语义特征和低层图像细节特征结合起来。
 
+
+
+这段文字是从本页的第一部分中摘录的，介绍了多模态学习的相关工作。多模态学习是指使用多种数据模态（如图像，视频，音频，文本等）进行深度学习的方法，常用于解决实际应用中的问题。这段文字对多模态学习的方法进行了三种分类，分别是：
+
+- 直接使用多种异构的模态（如图像，三维，音频）作为输入，不需要为每种模态设计单独的编码器，而是直接使用一个通用的网络来学习表示，例如Perceiver ¹ 和Hierarchical Perceiver ²。
+- 使用模态特定的编码器将不同模态的数据转换为相同的输入表示，然后使用一个通用的目标函数在隐空间中学习通用的模态特定的嵌入，例如data2vec ³。
+- 使用一个共享的编码器或者不同的编码器来实现不同模态之间的知识共享，例如Omnivore ⁴ 和VATT ⁵。
+
+这段文字的主要目的是为了介绍本文提出的OmniVec方法与现有的多模态学习方法的区别和联系，为后续的方法介绍和实验结果做铺垫。
+
+Source: Conversation with Bing, 1/23/2024
+(1) Multi-Modal Methods - MTank. https://www.themtank.org/multi-modal-methods.
+(2) Multimodal learning - Wikipedia. https://en.wikipedia.org/wiki/Multimodal_learning.
+(3) What Is Multimodal Learning? - eLearning Industry. https://elearningindustry.com/what-is-multimodal-learning.
+(4) What is Multimodal Communication? (and why use it?). https://www.communicationcommunity.com/what-is-multimodal-communication/.
+(5) Multimodal Qualitative Research to Study Complex Problems. https://www.methodspace.com/blog/multimodal-qualitative-research-study-complex-problems.
