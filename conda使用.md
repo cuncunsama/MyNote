@@ -1,0 +1,46 @@
+## 使用conda
+```
+conda create -n myenv python=3.9  //创建环境
+~/.conda/envs  // 环境默认存储位置
+conda create --name myenv --prefix /path/to/myenv // 指定不同的位置 
+conda activate myenv  // 激活conda环境		
+conda deactivate  // 退出conda环境		 
+conda remove --name myenv --all  // 删除conda环境		
+conda env list  // 查看所有的conda环境及其路径 
+conda list  // 列出conda环境中安装的所有包 
+```
+## 查看当前环境python搜索路径
+```
+python -m site
+```
+**sys.path**: 是一个环境变量，它包含了一系列目录名称，尝试导入一个模块时，python解释器会遍历sys.path的目录，直到找到相应的模块。  
+**USER_BASE**
+用户基础目录，存放用户级别的Python包的基本目录，用于存放通过pip install --user命令安装的包。  
+这些包是特定于用户的，不需要管理员权限即可安装。  
+**USER_SITE**
+用户站点目录，这个用户基础目录下的一个子目录，用于存放用户级别的Python包。  
+## 安装包的位置
+pip安装路径  
+正式环境中:  
+	~/.local/lib/python3.8/sit-packages/  
+conda环境中:  
+	~/.conda/envs/  
+	~/anaconda3/envs/  
+
+~/anaconda3/lib/python3.11/site-packages/  
+~/.envs/  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
