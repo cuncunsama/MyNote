@@ -17,7 +17,7 @@ conda remove package-name  // 卸载包
 conda update package-name  // 更新包
 
 ```
-### 使用conda配置源
+### 修改conda配置
 ```
 conda配置文件： ~/condarc
 conda config --set auto_activate_base false  // 取消自动进入base环境
