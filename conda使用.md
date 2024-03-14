@@ -17,10 +17,21 @@ conda remove package-name  // 卸载包
 conda update package-name  // 更新包
 
 ```
+### 使用conda配置源
+```
+conda配置文件： ~/condarc
+conda config --set auto_activate_base false  // 取消自动进入base环境
+conda config --show
+conda config --show channels   // 查看conda的channel
+conda config --show-sources    // 查看/home/suda401/.condarc
+conda config --add channels
+
+```
 ## 使用pip
 ```
 pip list  
-pip show packagename   // 可查看该包的位置  
+pip show packagename   // 可查看该包的位置
+pip search packagename  // 搜索包  
 pip install -e .    // 以可编辑模式安装package
 pip install -r requirement.txt
 
