@@ -18,9 +18,9 @@ pip list
 pip show packagename  
 
 ```
-## 查看当前环境python搜索路径
+## 使用Pthon
 ```
-python -m site
+python -m site // 查看当前环境python搜索路径  
 ```
 **sys.path**: 是一个环境变量，它包含了一系列目录名称，尝试导入一个模块时，python解释器会遍历sys.path的目录，直到找到相应的模块。  
 **USER_BASE**
