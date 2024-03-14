@@ -1,15 +1,20 @@
 ## 使用conda
 ```
-conda create -n myenv python=3.9  //创建环境
-~/.conda/envs  // 环境默认存储位置
-conda create --name myenv --prefix /path/to/myenv // 指定不同的位置 
+~/.conda/envs  // 环境默认存储位置  
+conda create -n myenv python=3.9  //创建环境  
+conda create -n env-name [list of package]  
+conda create --name myenv --prefix /path/to/myenv // 指定不同的位置  
+conda create -n env-name --clone existing-env    // 通过克隆来复制一个环境  
 conda activate myenv  // 激活conda环境		
 conda deactivate  // 退出conda环境		 
 conda remove --name myenv --all  // 删除conda环境		
 conda env list  // 查看所有的conda环境及其路径 
 conda list  // 列出conda环境中安装的所有包
-conda info -s
+conda info -s  
 conda info -e // 等同于 conda env list
+conda install package-name  // 安装包
+conda remove package-name  // 卸载包
+conda update package-name  // 更新包
 
 ```
 ## 使用pip
