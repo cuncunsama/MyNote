@@ -20,20 +20,20 @@ python -m site
 **USER_SITE**
 用户站点目录，这个用户基础目录下的一个子目录，用于存放用户级别的Python包。  
 ## 安装包的位置
-**pip**
-~/.local/lib/python3.8/sit-packages/  // 基本环境
-~/.conda/envs/  // conda环境
-~/anaconda3/envs/  
-**conda**
-~/anaconda3/lib/python3.11/site-packages/  
-~/.envs/  
-
-pip是python包的管理工具
-pip的镜像源： ~/.pip/pip.conf  
-自定义pip的配置: pip config -v list  
-查看包的信息：pip show pacagename  
-查看已经安装的包：pip list  (Package Version Editable project location)  
-以可编辑模式安装Python包：pip install -e /your/local/path  
+**pip**  
+~/.local/lib/python3.8/sit-packages/  // 基本环境  
+~/.conda/envs/  // conda环境  
+~/anaconda3/envs/    
+**conda**  
+~/anaconda3/lib/python3.11/site-packages/    
+~/.envs/    
+ 
+pip是python包的管理工具  
+pip的镜像源： ~/.pip/pip.conf    
+自定义pip的配置: pip config -v list    
+查看包的信息：pip show pacagename    
+查看已经安装的包：pip list  (Package Version Editable project location)    
+以可编辑模式安装Python包：pip install -e /your/local/path    
 
 
 
