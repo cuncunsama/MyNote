@@ -17,6 +17,12 @@ conda remove package-name  // 卸载包
 conda update package-name  // 更新包
 
 ```
+### 查看conda安装包的位置
+```
+import module
+print (module.__file__)
+```
+
 ### 修改conda配置
 ```
 conda配置文件： ~/condarc
