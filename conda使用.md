@@ -7,7 +7,16 @@ conda activate myenv  // 激活conda环境
 conda deactivate  // 退出conda环境		 
 conda remove --name myenv --all  // 删除conda环境		
 conda env list  // 查看所有的conda环境及其路径 
-conda list  // 列出conda环境中安装的所有包 
+conda list  // 列出conda环境中安装的所有包
+conda info -s
+conda info -e // 等同于 conda env list
+
+```
+## 使用pip
+```
+pip list  
+pip show packagename  
+
 ```
 ## 查看当前环境python搜索路径
 ```
