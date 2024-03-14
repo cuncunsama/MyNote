@@ -21,11 +21,12 @@ conda update package-name  // 更新包
 ```
 conda配置文件： ~/condarc
 conda config --set auto_activate_base false  // 取消自动进入base环境
-conda config --show
-conda config --show channels   // 查看conda的channel
+conda config --show   // 查看conda的配置
 conda config --show-sources    // 查看/home/suda401/.condarc
-conda config --add channels
-
+conda config --show channels   // 查看conda的channel
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ //添加清华源  
+conda config --remove channels channels 源名称或链接  
+ 
 ```
 ## 使用pip
 ```
