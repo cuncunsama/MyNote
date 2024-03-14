@@ -15,7 +15,9 @@ conda info -e // 等同于 conda env list
 ## 使用pip
 ```
 pip list  
-pip show packagename  
+pip show packagename   // 可查看该包的位置  
+pip install -e .    // 以可编辑模式安装package
+pip install -r requirement.txt
 
 ```
 ## 使用Pthon
