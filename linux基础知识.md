@@ -34,6 +34,14 @@
 需要注意的是，/etc/bash.bashrc 在Debian系统中有一些特殊的行为。在Debian中，Bash被编译时使用了 -DSYS_BASHRC 选项，使得Bash在执行交互式非登录shell时会先读取 /etc/bash.bashrc，然后再读取 ~/.bashrc。因此，在Debian系统中，/etc/bash.bashrc 的作用类似于 /etc/profile 对于 ~/.bash_profile 的作用 。  
 
 
+当按下 `Ctrl+Alt+F1` 进入TTY1终端模式时，进入了一个**登录shell**。在TTY1中，你需要输入用户名和密码来登录系统。这是一个交互式登录shell，用于实时与用户交互，并从启动文件中读取命令和设置环境变量。
+
+如果你在TTY1中执行命令，它会立即执行并返回结果。当你退出TTY1时，这个shell也会终止。
+
+请注意，TTY1是一个文本控制台，不包含图形界面。如果你想返回到图形界面（X会话），可以按下 `Ctrl+Alt+F7`。
+
+
+
 
 ## source 和 . 和 ./ 和 sh 执行文件时的区别 
 1. source 和 . 执行文件是在当前shell中进行，会影响到当前shell的环境  
