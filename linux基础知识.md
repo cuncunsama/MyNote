@@ -14,8 +14,9 @@
 3. ./ 是执行所有可执行程序的一种方式，./的执行也是在当前shell的子shel中运行，同样不会影响当前shell的环境  
 
 当启动一个**交互式非登录shell**时，Bash会读取并执行```/etc/bashrc```和```~/bashrc```。每次打开一个新的终端或启动一个新的子shell时，都会执行这两个文件中的命令。  
-```/etc/bash.bashrc``` **系统级别**  
-```/.bashrc```	**用户级别**  
+**系统级别**```/etc/bash.bashrc```   ```/etc/lprofile```  
+**用户级别**```/.bashrc```  ```/.profile```
+需要注意的是，/etc/bash.bashrc 在Debian系统中有一些特殊的行为。在Debian中，Bash被编译时使用了 -DSYS_BASHRC 选项，使得Bash在执行交互式非登录shell时会先读取 /etc/bash.bashrc，然后再读取 ~/.bashrc。因此，在Debian系统中，/etc/bash.bashrc 的作用类似于 /etc/profile 对于 ~/.bash_profile 的作用 。  
 
 $0 脚本的名字  
 $1 传入脚本的第一个参数  
