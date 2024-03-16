@@ -38,6 +38,7 @@
 /etc/profile  
 ~/.bashrc  
 ~/.profile  
+
 **ctrl+alt+t**  
 /etc/bash.bashrc  
 ~/.bashrc  
