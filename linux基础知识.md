@@ -32,7 +32,43 @@ $# 传入脚本的参数个数
 ~$ find / -type d -name cuda 
 指定文件，名中带cuda
 ~$ find / -type f -name cuda
-
 ```
+### grep
+查找文件内容中包含固定字符串的文件    
+```
+~$ grep "搜索内容" "搜索路径"
+~$ grep "固定字符串" /path/to/directory/*
+递归在所有子目录中搜索，并且只输出文件名
+~$ grep -rl "String" /path/to/dir
+只看文本文件，使用-I排除二进制文件
+~$ grep -rIl "String" /path/to/dir
+```
+```
+ls | grep -v "\.png$" 屏蔽输出中 .png 结尾的文件 \. 表示 . ，\ 是反义符号
+```
+### locate
+在数据库中搜索，所以速度很快，添加或删除文件后使用```updatedb```更新数据库后在进行搜索
+
+### which
+查看可执行文件的位置，在```PATH```变量指定的路径中搜索，返回第一个搜索结果  
+```
+~$ which ls
+```
+
+### whereis
+用于定位二进制文件、源代码文件和手册页面的路径 /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/sbin
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
