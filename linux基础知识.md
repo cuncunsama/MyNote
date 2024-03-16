@@ -33,6 +33,17 @@
 **用户级别**```/.bashrc```  ```/.profile```
 需要注意的是，/etc/bash.bashrc 在Debian系统中有一些特殊的行为。在Debian中，Bash被编译时使用了 -DSYS_BASHRC 选项，使得Bash在执行交互式非登录shell时会先读取 /etc/bash.bashrc，然后再读取 ~/.bashrc。因此，在Debian系统中，/etc/bash.bashrc 的作用类似于 /etc/profile 对于 ~/.bash_profile 的作用 。  
 
+**ssh远程登录**  
+/etc/bash.bashrc  
+/etc/profile  
+~/.bashrc  
+~/.profile  
+**ctrl+alt+t**  
+/etc/bash.bashrc  
+~/.bashrc  
+**ctrl+alt+f1**  
+
+
 
 当按下 `Ctrl+Alt+F1` 进入TTY1终端模式时，进入了一个**登录shell**。在TTY1中，你需要输入用户名和密码来登录系统。这是一个交互式登录shell，用于实时与用户交互，并从启动文件中读取命令和设置环境变量。
 
