@@ -24,3 +24,15 @@ $# 传入脚本的参数个数
 
 ## 查看电脑和系统信息
 
+
+## 查找文件
+### find  
+```
+指定目录，名中带cuda
+~$ find / -type d -name cuda 
+指定文件，名中带cuda
+~$ find / -type f -name cuda
+
+```
+
+
