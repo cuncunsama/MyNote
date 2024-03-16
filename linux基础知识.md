@@ -33,7 +33,7 @@
 **用户级别**```/.bashrc```  ```/.profile```
 需要注意的是，/etc/bash.bashrc 在Debian系统中有一些特殊的行为。在Debian中，Bash被编译时使用了 -DSYS_BASHRC 选项，使得Bash在执行交互式非登录shell时会先读取 /etc/bash.bashrc，然后再读取 ~/.bashrc。因此，在Debian系统中，/etc/bash.bashrc 的作用类似于 /etc/profile 对于 ~/.bash_profile 的作用 。  
 
-**ssh远程登录**  
+**ssh远程登录**  **ctrl+alt+f1**   
 /etc/bash.bashrc  
 /etc/profile  
 ~/.bashrc  
@@ -41,7 +41,7 @@
 **ctrl+alt+t**  
 /etc/bash.bashrc  
 ~/.bashrc  
-**ctrl+alt+f1**  
+ 
 
 
 
