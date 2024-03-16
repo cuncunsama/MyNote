@@ -41,12 +41,19 @@ pip show packagename   // 可查看该包的位置
 pip search packagename  // 搜索包  
 pip install -e .    // 以可编辑模式安装package
 pip install -r requirement.txt
+```
+### ~$ pip list --format=freeze  
+```
+package1==1.0.0
+package2==2.0.0
+package3==3.0.0
+```
+### 组合命令
+~$ pip list --format=freeze | cut -d '=' -f 1 | xargs -I {} pip show {} | grep "Location"
 
-```
-## 使用Pthon
-```
+
+## 使用Python
 python -m site // 查看当前环境python搜索路径  
-```
 **sys.path**: 是一个环境变量，它包含了一系列目录名称，尝试导入一个模块时，python解释器会遍历sys.path的目录，直到找到相应的模块。  
 **USER_BASE**
 用户基础目录，存放用户级别的Python包的基本目录，用于存放通过pip install --user命令安装的包。  
