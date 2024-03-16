@@ -1,22 +1,46 @@
 # linux基础
 ## 环境变量文件
-**系统级别，对所有用户有效**   
-**/etc/profile**	会调用 /etc/bash.bashrc, 系统全局环境变量设定，修改后需要重新登录或者source   
-**/etc/bash.bashrc** 重新打开一个shell就可生效  
+在Linux系统中，这些配置文件的执行顺序如下：
 
-**用户私有环境变量设定，只对当前用户有效**  
-**/home/user/.profile** 	  for logn shells，会调用 ~/.bashrc 需要重新登录才能生效  
-**/home/user/.bashrc**	   for non-login shells 每次打开新的shell时，会执行该文件  
+1. **`/etc/profile`**：
+    - 位于系统级别，适用于所有用户。
+    - 在用户登录时执行，用于设置全局环境变量和系统范围的配置。
+    - 通常包含一些路径设置、全局环境变量和系统级别的别名。
+    - 只在登录时执行一次。
+
+2. **`~/.bash_profile`、`~/.bash_login`、`~/.profile`**：
+    - 位于用户级别，适用于单个用户。
+    - 在每次登录时执行其中一个，按照以下顺序：
+        - `~/.bash_profile`
+        - `~/.bash_login`
+        - `~/.profile`
+    - 主要用于定义与用户相关的环境变量和个人级别的配置。
+    - 如果存在 `~/.bash_profile` 文件，一般还会执行 `~/.bashrc` 文件。
+
+3. **`~/.bashrc`**：
+    - 位于用户级别，适用于单个用户。
+    - 在每次启动新的子shell（例如打开终端）时执行。
+    - 主要用于定义与交互式命令行相关的配置，例如命令提示符、编辑器变量和用户级别的别名。
+    - 不应该输出任何内容，以避免干扰非交互式的操作。
+
+4. **`/etc/bash.bashrc`**：
+    - 为每一个运行Bash shell的用户执行此文件。
+    - 当Bash shell被打开时，该文件被读取。
+    - 在Debian系统中，`/etc/bash.bashrc` 会在执行 `~/.bashrc` 之前被读取。
+
+当启动一个**交互式非登录shell**时，Bash会读取并执行```/etc/bashrc```和```~/bashrc```。每次打开一个新的终端或启动一个新的子shell时，都会执行这两个文件中的命令。  
+**系统级别**```/etc/bash.bashrc```   ```/etc/lprofile```  
+**用户级别**```/.bashrc```  ```/.profile```
+需要注意的是，/etc/bash.bashrc 在Debian系统中有一些特殊的行为。在Debian中，Bash被编译时使用了 -DSYS_BASHRC 选项，使得Bash在执行交互式非登录shell时会先读取 /etc/bash.bashrc，然后再读取 ~/.bashrc。因此，在Debian系统中，/etc/bash.bashrc 的作用类似于 /etc/profile 对于 ~/.bash_profile 的作用 。  
+
+
 
 ## source 和 . 和 ./ 和 sh 执行文件时的区别 
 1. source 和 . 执行文件是在当前shell中进行，会影响到当前shell的环境  
 2. sh 执行文件是在子shell中进行的，如果脚本中设置了环境变量，即使PATH改变了也不会反应到当前环境中  
 3. ./ 是执行所有可执行程序的一种方式，./的执行也是在当前shell的子shel中运行，同样不会影响当前shell的环境  
 
-当启动一个**交互式非登录shell**时，Bash会读取并执行```/etc/bashrc```和```~/bashrc```。每次打开一个新的终端或启动一个新的子shell时，都会执行这两个文件中的命令。  
-**系统级别**```/etc/bash.bashrc```   ```/etc/lprofile```  
-**用户级别**```/.bashrc```  ```/.profile```
-需要注意的是，/etc/bash.bashrc 在Debian系统中有一些特殊的行为。在Debian中，Bash被编译时使用了 -DSYS_BASHRC 选项，使得Bash在执行交互式非登录shell时会先读取 /etc/bash.bashrc，然后再读取 ~/.bashrc。因此，在Debian系统中，/etc/bash.bashrc 的作用类似于 /etc/profile 对于 ~/.bash_profile 的作用 。  
+
 
 $0 脚本的名字  
 $1 传入脚本的第一个参数  
