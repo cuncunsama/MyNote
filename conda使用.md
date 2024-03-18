@@ -32,7 +32,7 @@ conda config --show-sources    // 查看/home/suda401/.condarc
 conda config --show channels   // 查看conda的channel
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ //添加清华源  
 conda config --remove channels channels 源名称或链接  
- 
+conda config --set auto_activate_base false  // 取消每次启动终端时自动激活base环境  
 ```
 ## 使用pip
 ```
